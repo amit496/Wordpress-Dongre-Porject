@@ -31,7 +31,9 @@ function kk_theme_assets() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('kk-swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '11', true);
 
-    if (is_page(['products', 'shop', 'product-listing'])) {
+    $is_shop_archive = function_exists('is_shop') && (is_shop() || is_product_taxonomy());
+
+    if (is_page(['products', 'shop', 'product-listing']) || $is_shop_archive) {
         wp_enqueue_style('kk-search', $uri . '/assets/css/searchMain.css', ['kk-global'], $asset_version('/assets/css/searchMain.css'));
         wp_enqueue_script('kk-search-page', $uri . '/assets/js/page-search.js', ['jquery'], $asset_version('/assets/js/page-search.js'), true);
     }
