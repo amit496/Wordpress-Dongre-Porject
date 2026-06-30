@@ -1,11 +1,11 @@
 .DS_Store
 
 # Local WordPress config and generated files
-wp-config.php
-wp-content/uploads/
-wp-content/upgrade/
-wp-content/cache/
-wp-content/debug.log
+# wp-config.php
+# wp-content/uploads/
+# wp-content/upgrade/
+# wp-content/cache/
+# wp-content/debug.log
 
 # Common dependency/build folders
 node_modules/
