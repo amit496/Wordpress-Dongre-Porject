@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop The Look - Dash and Dot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <nav class="mobile-menu-drawer" id="mobileMenuDrawer">
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">
+                <img src="./images/logo-white.png"/>
+            </div>
+            <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+        </div>
+        <div class="mobile-menu-search">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <ul class="mobile-menu-nav">
+            <li class="mobile-nav-item"><a href="products.html">New In! <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Top Wear <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Sets <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Sarees <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Blouses <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Dress Materials <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Bottom Wear <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Sale <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Collections <i class="fas fa-chevron-right"></i></a></li>
+            <li class="mobile-nav-item"><a href="products.html">Online Exclusive <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <div class="gender-btns">
+                <button class="gender-btn active">WOMAN</button>
+                <button class="gender-btn">MAN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <p>Enjoy extra 10% off on your first purchase. Use Code <span class="promo-code">NEW10</span></p>
+        <button class="promo-close">&times;</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-left">
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <button class="menu-btn">MENU</button>
+                <button class="gender-btn active">WOMAN</button>
+                <button class="gender-btn">MAN</button>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo.png"/>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="SEARCH">
+                </div>
+                <button class="icon-btn user-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn cart-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </button>
+                <div class="currency-select">
+                    <span>INR</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop The Look Page -->
+    <main class="shop-look-page">
+        <div class="page-intro">
+            <h1>SHOP THE LOOK</h1>
+            <p class="intro-text"><strong>Shop the Look</strong> - From casual to formal, we've added a wide selection of outfits to make you look your best and feel confident. Get a perfect look for dinner dates to lounging around in no time at the most affordable price on Beyoung. Each clothing set is carefully curated by our in-house designers to give you a stylish look and comfortable fit. Scroll down to find the best look for you.</p>
+        </div>
+
+        <!-- Sort Options -->
+        <div class="sort-section">
+            <span class="sort-label">Sort By</span>
+            <div class="sort-dropdown-wrapper">
+                <select class="sort-select">
+                    <option value="recommended">Recommended</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Look Cards Grid -->
+        <div class="look-cards-grid">
+            <!-- Look Card 1 -->
+            <div class="look-outfit-card">
+                <div class="outfit-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Grey Shirt With Black Chinos">
+                    <button class="wishlist-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="outfit-items">
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=60&h=60&fit=crop" alt="Grey Shirt">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=60&h=60&fit=crop" alt="Black Chinos">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=60&h=60&fit=crop" alt="Beige Shirt">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=60&h=60&fit=crop" alt="Black Pants">
+                    </div>
+                </div>
+                <div class="outfit-info">
+                    <h3>Grey Shirt With Black Chinos: Pack Of...</h3>
+                    <a href="product-detail.html" class="shop-link">Shop The Look</a>
+                </div>
+            </div>
+
+            <!-- Look Card 2 -->
+            <div class="look-outfit-card">
+                <div class="outfit-image">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop" alt="French Wine And Thunder Grey Polo">
+                    <button class="wishlist-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="outfit-items">
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=60&h=60&fit=crop" alt="Wine Polo">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=60&h=60&fit=crop" alt="Grey Pants">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=60&h=60&fit=crop" alt="Grey Polo">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=60&h=60&fit=crop" alt="Dark Pants">
+                    </div>
+                </div>
+                <div class="outfit-info">
+                    <h3>French Wine And Thunder Grey Polo ...</h3>
+                    <a href="product-detail.html" class="shop-link">Shop The Look</a>
+                </div>
+            </div>
+
+            <!-- Look Card 3 -->
+            <div class="look-outfit-card">
+                <div class="outfit-image">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" alt="Black Plain T-Shirt With Dark Grey">
+                    <button class="wishlist-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="outfit-items">
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=60&h=60&fit=crop" alt="Black T-Shirt">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=60&h=60&fit=crop" alt="Grey Pants">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=60&h=60&fit=crop" alt="Black Tee">
+                    </div>
+                    <div class="item-thumb">
+                        <img src="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=60&h=60&fit=crop" alt="Dark Pants">
+                    </div>
+                </div>
+                <div class="outfit-info">
+                    <h3>Black Plain T-Shirt With Dark Grey Py...</h3>
+                    <a href="product-detail.html" class="shop-link">Shop The Look</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Watch and Buy Section -->
+        <section class="watch-buy-section">
+            <h2 class="section-title">Watch and Buy</h2>
+            <div class="watch-carousel">
+                <button class="carousel-btn prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="watch-grid">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=200&h=280&fit=crop" alt="Lilac Embroidered Panelled Silk">
+                            <span class="view-count">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                12K
+                            </span>
+                            <span class="brand-tag">D&D</span>
+                            <div class="watch-overlay">
+                                <span class="overlay-text">Behind the Scenes with</span>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Lilac Embroidered Panelled Silk...</h4>
+                            <span class="price">&#8377; 22,999</span>
+                        </div>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=200&h=280&fit=crop" alt="Pink Bead Work Pintuck Blouse">
+                            <span class="view-count">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                3K
+                            </span>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Pink Bead Work Pintuck Blouse Wi...</h4>
+                            <span class="price">&#8377; 19,999</span>
+                        </div>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=200&h=280&fit=crop" alt="Orange Zari Embroidered Jacquar">
+                            <span class="view-count">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                4K
+                            </span>
+                            <span class="brand-tag promo">Style Express</span>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Orange Zari Embroidered Jacquar...</h4>
+                            <span class="price">&#8377; 14,999</span>
+                        </div>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="https://images.unsplash.com/photo-1594938374182-a57061dce45e?w=200&h=280&fit=crop" alt="Old Rose Sequin Embroidered">
+                            <span class="view-count">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                2K
+                            </span>
+                            <span class="brand-tag showstopper">SHOWSTOPPERS</span>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Old Rose Sequin Embroidered Mes...</h4>
+                            <span class="price">&#8377; 19,999</span>
+                        </div>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=200&h=280&fit=crop" alt="Red Zari Embroidered Jac">
+                            <span class="view-count">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                4K
+                            </span>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Red Zari Embroidered Jac...</h4>
+                            <span class="price">&#8377; 19,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dash and Dot. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <div class="mobile-bottom-nav-items">
+            <a href="index.html" class="mobile-bottom-nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="products.html" class="mobile-bottom-nav-item">
+                <i class="fas fa-th-large"></i>
+                <span>Shop</span>
+            </a>
+            <a href="#" class="mobile-bottom-nav-item">
+                <i class="far fa-heart"></i>
+                <span>Wishlist</span>
+            </a>
+            <a href="#" class="mobile-bottom-nav-item">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Bag</span>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#" class="mobile-bottom-nav-item">
+                <i class="far fa-user"></i>
+                <span>Account</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <script defer type="text/javascript" src="./assets/js/cart.js"></script>
+</body>
+</html>
